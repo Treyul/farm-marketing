@@ -1,0 +1,6 @@
+gunicorn
+django
+python-dateutil
+mysqlclient
+django-on-heroku 
+python-dotenv

@@ -1,3 +1,9 @@
 from django.db import models
 
-# Create your models here.
+class Farm_Expenses(models.Model):
+
+    pass
+
+class Farm_Revenue(models.Model):
+    pass
+
