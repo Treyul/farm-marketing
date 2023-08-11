@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Fleur De Leah"
+    />
+    <title>Document</title>
+    <script defer src="/static/layout.js"></script>
+    <link rel="stylesheet" href="/static/layout.css"></link>
+    {%block style %} {%endblock%}
+  </head>
+
+  <!--  -->
+  <body>
+    <header id="generic-menu">
+      <!-- container to hold all the menu related items -->
+      <div id="menu-container">
+        <div id="Hamburger" class="ham">
+          <div id="one" class="ham-item"></div>
+          <div id="two" class="ham-item"></div>
+          <div id="three" class="ham-item"></div>
+        </div>
+        <!-- container to hold the menu items-->
+        <div id="menu" class="hide-menu">
+          <!-- menu item -->
+          <div class="menu-item">
+            <!-- menu  icon -->
+            <div class="menu-icon"></div>
+            <p><a href="/home">Home</a></p>
+          </div>
+          <div class="menu-item">
+            <!-- menu  icon -->
+            <div class="menu-icon"></div>
+            <p><a href="/sales">Sales</a></p>
+          </div>
+          <div class="menu-item">
+            <!-- menu  icon -->
+            <div class="menu-icon"></div>
+            <p><a href="/finances">Finances</a></p>
+          </div>
+          <div class="menu-item">
+            <!-- menu  icon -->
+            <div class="menu-icon"></div>
+            <p><a href="/dashboard">Dashboard</a></p>
+          </div>
+          <div class="menu-item">
+            <!-- menu  icon -->
+            <div class="menu-icon"></div>
+            <p><a href="/harvest">Harvest</a></p>
+          </div>
+          <div class="menu-item">
+            <!-- menu  icon -->
+            <div class="menu-icon"></div>
+            <p><a href="/irrigation">Irrigation</a></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- conater holding the account menu related menus -->
+      <div id="account-deets">
+        <!-- icon to hold the photo and the initials if a picture is not available -->
+        <div id="account-icon">EK</div>
+        <!-- Card to hold the account menus -->
+        <div id="account-card"></div>
+      </div>
+    </header>
+
+    <div id="body">
+        <p>Hello world</p>
+    {% block body %} {%endblock%}
+    </body>
+  </body>
+</html>
