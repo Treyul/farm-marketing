@@ -1,9 +1,51 @@
 {%extends 'layout.html' %} {%block style %}
-<style>
-  body {
-    background-image: url("/static/growth.jpg");
-  }
-</style>
-{%endblock%} {% block body %} {%endblock%}
+<link rel="stylesheet" href="/static/irrigation.css"></link>
+<script defer src="/static/irrigation.js"></script>
+{%endblock%} {% block body %}
+
+{% comment %} C {% endcomment %}
+<section class="plant-card">
+  {% comment %} summary of the plant details {% endcomment %}
+  <header class="plant-details">
+    <p>Tomatoes</p>
+    <p>2 plots</p>
+    <p>60 crops</p>
+  </header>
+  <article>
+    <header><p>Plot No:  8</p><p>Variety:  Money Maker</p></header>
+<article id="chronology">
+  <header class="title">Chronology</header>
+  <section class="hide-section">
+  <div><p>Nursery:</p><p> 23 July 2023</p></div>
+  <div><p>Transplanting:</p><p> 23 Aug 2023</p></div>
+  <div><p>Age:</p><p>1 month</p> <p>Amount:</p><p>15 crops</p></div>
+  </section>
+  <footer>show</footer>
+</article>
+<article id="conditions">
+  <header class="title">Plant conditions</header>
+  <section class="hide-section">
+    <div><p>Soil moisture:</p><p> 4/10</p></div>
+    <div><p>Last irrigation:</p><p> 1day 15hrs ago</p></div>
+    <div><p>Flowering:</p><p> 3 Sept 2023</p></div>
+    <div><p>Fruiting:</p><p> Not yet</p></div>
+  </section>
+  {% comment %} <footer>show</footer> {% endcomment %}
+</article>
+<article id="pesticides">
+  <header class="title">Pesticide history</header>
+  <section>
+    <header><p>Date</p><p>Disease</p><p>Pesticide</p></header>
+    <div><p>2 Sept 2023</p> <div class="borders"></div><p>White Mildew</p><div class="borders"></div> <p>Duduthrin</p></div>
+  </section>
+  {% comment %} <footer>show</footer> {% endcomment %}
+</article>
+<footer><span class="material-symbols-rounded">
+  stat_2
+  </span> hide details</footer>
+{% comment %} <button id="plot-details-btn">Show more details</button> {% endcomment %}
+</article>
+</section>
+ {%endblock%}
 </head>
 </html>

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Carattere&family=Epilogue&family=Fleur+De+Leah&display=swap");
 body {
   margin: 0px;
   background-repeat: no-repeat;
@@ -9,7 +10,9 @@ div[id="Hamburger"] {
   margin-top: 1.25rem;
   /* height: 2.5rem; */
 }
-
+.material-symbols-rounded {
+  font-size: inherit;
+}
 div[id="Hamburger"] div {
   margin: 0.6rem 0rem;
   background-color: black;
@@ -94,6 +97,7 @@ div[id="Hamburger"] div {
   position: fixed;
   top: 0px;
   width: 100%;
+  height: 0px;
   /* {% comment %} margin-bottom:2rem; {% endcomment %} */
 }
 #account-deets {
@@ -110,5 +114,5 @@ div[id="Hamburger"] div {
   font-size: x-large;
 }
 #body {
-  margin-top: 5.5rem;
+  margin-top: 4rem;
 }

@@ -4,6 +4,39 @@
         background-image: url("/static/home3.jpg");
       }
     </style>
-    {%endblock%} {% block body %} {%endblock%}
+    <link rel="stylesheet" href="/static/home.css"/>
+    {%endblock%} {% block body %}
+    <section id="farm_variables">
+      <header>Farm variables</header>
+      <div><p>Current temperature</p><p>25<sup>o</sup>C</p></div>
+      <div><p>Water tank level</p><p>50%</p></div>
+    </section>
+    <section id="plot-division">
+      <div><p>Active sections</p><p>9</p></div>
+      <div><p>Inactive sections</p><p>2</p></div>
+    </section>
+    <section id="plant-list">
+      <header>Crops planted</header>
+      <ul>
+        <li>Tomatoes</li>
+        <li>Onions</li>
+        <li>Yellow beans</li>
+        <li>Strawberries</li>
+        <li>Egg plants</li>
+        <li>Hoho</li>
+        <li>Spinach</li>
+        <li>Kales</li>
+      </ul>
+    </section>
+    <section id="finance-summary">
+      <header>Financial status</header>
+      <article>
+        <div><p>Revenues</p><p>10580</p></div>
+        <div><p>Expenses</p><p>5920</p></div>
+        <hr>
+        <div><p>Profit</p><p>4660</p></div>
+      </article>
+    </section>
+    {%endblock%}
   </head>
 </html>

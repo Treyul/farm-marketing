@@ -1,0 +1,173 @@
+body {
+  background-image: url("/static/growth.jpg");
+}
+.plant-card {
+  background-color: rgb(254 243 115 / 60%);
+  margin: 1rem 2rem;
+  border-radius: 12px;
+  /* {% comment %} border-bottom: 0.5px solid #F9B63D; {% endcomment %} */
+  padding-bottom: 0.5rem;
+}
+.plant-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-bottom: 0.5px solid rgba(213 200 65, 0.6);
+  border-bottom-style: double;
+  border-bottom-width: 2px;
+  justify-items: center;
+  margin-bottom: 0.5rem;
+}
+.plant-details p {
+  margin: 0.125rem;
+  margin-top: 0.5rem;
+}
+#plot-details-btn {
+  background-color: #fff44b;
+  padding: 0.25rem 1rem;
+  margin-top: 0.75rem;
+  box-shadow: 0px 0px 6px 1px rgb(0 0 0 / 25%);
+  border: none;
+  border-radius: 30px;
+}
+
+.plant-card > article {
+  background-color: rgba(255, 243, 75, 0.6);
+  border-radius: 15px;
+  margin-bottom: 0.5rem;
+}
+.plant-card > article > footer {
+  font-family: Carattere, Cambria, Cochin, Georgia, Times, "Times New Roman",
+    serif;
+  text-align: center;
+  margin-top: 0.5rem;
+  border-top: 1px solid rgba(255, 243, 75, 0.952);
+}
+
+.plant-card article article {
+  margin-top: 1rem;
+}
+.plant-card > article > header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 1rem;
+  margin-bottom: -0.85rem;
+}
+.plant-card > article > header p {
+  margin: 0px;
+}
+/* .plant-card > article > header p:last-child
+{
+
+} */
+.plant-card article article > header {
+  text-decoration: underline;
+  text-align: center;
+  /* border-radius: 15px 15px 0px 0px; */
+  padding-bottom: 0.125rem;
+}
+.plant-card article article footer {
+  /* border-radius: 0px 0px 15px 15px; */
+  text-align: center;
+  margin-bottom: 1rem;
+  display: none;
+}
+
+.hide-section {
+  /* transition: all ease 1.5s; */
+  /* height: 0px; */
+}
+/* .show-section { */
+/* transition: all ease 1.5s; */
+/* height: 68px; */
+/* }*/
+
+#chronology > header,
+#chronology > section,
+#chronology > footer {
+  background-color: rgb(229 163 39 / 25%);
+}
+#conditions > header,
+#conditions > section,
+#conditions > footer {
+  background-color: rgb(156 195 44 / 30%);
+  /* background-color: rgb(100 146 37 / 30%); */
+}
+#pesticides > header,
+#pesticides > section,
+#pesticides > footer {
+  background-color: rgb(197 205 0 / 28%);
+}
+
+#conditions div,
+#chronology div {
+  display: flex;
+  justify-content: space-between;
+}
+#pesticides div p,
+#conditions div p,
+#chronology div p {
+  margin: 0.125rem 0px;
+}
+/* #pesticides div p:first-child,
+#conditions div p:first-child, */
+#chronology div p:first-child,
+#conditions div p:first-child {
+  margin-left: 1.25rem;
+}
+#chronology div p:last-child,
+#conditions div p:last-child {
+  margin-right: 1.25rem;
+}
+
+#pesticides > header {
+  border-top: 0.5px solid rgb(160 167 1 / 75%);
+  /* border-top-style: double;
+  border-top-width: 2px; */
+}
+#conditions header {
+  border-top: 0.5px solid rgba(100, 146, 37, 0.75);
+  /* border-top-style: double;
+  border-top-width: 2px; */
+}
+#chronology header {
+  border-top: 0.5px solid rgb(249, 184, 62);
+  /* border-top-style: double;
+  border-top-width: 2px; */
+}
+#conditions section {
+  border-bottom: 0.5px solid rgba(100, 146, 37, 0.75);
+}
+#chronology section {
+  border-bottom: 0.5px solid rgb(249, 184, 62);
+}
+#pesticides section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-bottom: 0.5px solid rgb(160 167 1 / 75%);
+}
+
+#pesticides section > header {
+  grid-column: span 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+#pesticides section > div {
+  grid-column: span 3;
+  display: grid;
+  grid-template-columns: 0.9fr 1px 1.15fr 1px 0.9fr;
+  justify-items: center;
+}
+
+#pesticides section * p {
+  margin: 0px;
+}
+
+/* #pesticides section div div[class="borders"] {
+  border-right: 1px solid black;
+  wi
+} */
+#pesticides section div div[class="borders"] {
+  width: 1px;
+  background-color: black;
+}

@@ -26,6 +26,6 @@ urlpatterns = [
     path("harvest/",include("harvest.urls")),
     path("irrigation/",include("irrigation.urls")),
     path("sales/",include("sales.urls")),
-    path("signup/",include("Home.urls")),
+    path("signup/",include("signup.urls")),
     
 ]
