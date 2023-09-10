@@ -1,9 +1,33 @@
 {%extends 'layout.html' %} {%block style %}
+<link rel="stylesheet" href="/static/sales.css"></link>
+<script defer src="/static/sales.js"></script>
 <style>
   body {
     background-image: url("/static/sales.jpg");
   }
 </style>
-{%endblock%} {% block body %} {%endblock%}
+{%endblock%} {% block body %}
+<section id="Availableproducts">
+<header>Products Available</header>
+<article>
+  <div class="headers"><p>Product</p><p>Quantity</p><p>Unit price</p></div>
+  <div><p>Capsicum</p><p>20pcs</p><p>10 KES</p></div>
+  <div><p>Yellow beans</p><p>5kgs</p><p>130 KES</p></div>
+</article>
+</section>
+<section id="PendingOrders">
+  <header>Pending Orders</header>
+  <article>
+    <div class="headers"><p>Name</p><p>Delivery location</p><p>Amount Paid</p></div>
+    <article class="order-deets">
+      <header><p>Chris Nolan</p><p>Joska,Nairobi</p><p>450</p></header>
+      <div>
+        <header><p>Product</p><p>Qty</p><p>Price</p><p>Total</p></header>
+      </div>
+      <footer style="grid-column:span 3"><p>hide order details</p></footer>
+    </article>
+  </article>
+</section>
+{%endblock%}
 </head>
 </html>

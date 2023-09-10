@@ -1,0 +1,58 @@
+.info {
+  margin: 0px 1rem;
+  border-radius: 20px;
+  background-color: rgba(197, 205, 0, 0.5);
+  border: 0.5px solid rgba(138, 136, 136, 1);
+}
+.info p {
+  margin: 0px;
+}
+.info div:first-child {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 1rem;
+  padding-top: 0.5rem;
+}
+.info > div > p > span {
+  font-family: "Fleur De Leah";
+  padding-right: 0.25rem;
+  font-size: 23px;
+}
+.info div p:first-child {
+  font-family: Carattere;
+  font-size: 19px;
+  text-align: center;
+  line-height: 16px;
+}
+.info p:last-child {
+  text-align: center;
+  font-family: "Fleur De Leah";
+  font-size: 19px;
+}
+.info .info-icon {
+  background-color: rgba(217, 217, 217, 1);
+  border-radius: 15px;
+  height: 20px;
+  width: 20px;
+  display: grid;
+  align-items: center;
+  box-shadow: 2px 1px 11px 0px;
+  font-family: "Fleur De Leah";
+  text-align: center;
+}
+.info-icon p {
+  margin: 0px;
+  font-family: "Fleur De Leah";
+}
+#finance-summary {
+  border: 0.5px solid rgba(94, 145, 237, 1);
+  background-color: rgba(162, 190, 240, 0.75);
+  border-radius: 5px;
+  font-family: "Gideon Roman";
+  margin: 0px 1rem;
+  margin-top: 1rem;
+}
+
+#finance-summary article header {
+  text-align: center;
+}

@@ -32,7 +32,7 @@ body {
 
 .plant-card > article {
   background-color: rgba(255, 243, 75, 0.6);
-  border-radius: 15px;
+  /* border-radius: 15px; */
   margin-bottom: 0.5rem;
 }
 .plant-card > article > footer {
@@ -45,6 +45,8 @@ body {
 
 .plant-card article article {
   margin-top: 1rem;
+  transition: all ease 2s;
+  overflow: hidden;
 }
 .plant-card > article > header {
   display: flex;

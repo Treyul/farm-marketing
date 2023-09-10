@@ -1,3 +1,4 @@
+# TODO enable user token authentication 
 """
 Django settings for farmmarketing project.
 

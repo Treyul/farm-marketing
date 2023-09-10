@@ -1,9 +1,30 @@
 {%extends 'layout.html' %} {%block style %}
+<link rel="stylesheet" href="/static/finances.css"></link>
+<script defer src="/static/finances.js"></script>
 <style>
   body {
     background-image: url("/static/fruits.jpg");
   }
 </style>
-{%endblock%} {% block body %} {%endblock%}
+{%endblock%} {% block body %}
+<div class="info">
+  <div>
+  <p>
+    <span>T</span>his page only shows this years financial standing,<br>
+    to view records from the previous year.
+  </p>
+  <div class="info-icon"><p>i</p></div>
+</div>
+  <p  >Please visit the <a href="/dashboard">dashboard</a></p>
+</div>
+<section id="finance-summary">
+  <article>
+    <header>Expenditure</header>
+  </article>
+  <article>
+    <header>Revenue</header>
+  </article>
+</section>
+{%endblock%}
 </head>
 </html>

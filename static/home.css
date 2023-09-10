@@ -4,6 +4,7 @@ section {
 #farm_variables {
   background-color: rgba(246, 189, 189, 0.47);
   border-radius: 8px;
+  padding-bottom: 0.25rem;
 }
 #plot-division {
   background-color: rgba(246, 189, 189, 0.47);
@@ -17,12 +18,35 @@ section {
   background-color: rgba(220, 189, 205, 0.6);
   border-radius: 5px;
 }
+#finance-summary article > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+#finance-summary article div:first-child p:last-child {
+  color: rgba(47, 157, 29, 1);
+}
+#finance-summary article div:nth-child(2) p:last-child {
+  color: rgba(250, 92, 92, 1);
+}
+#finance-summary article div:last-child p:last-child {
+  color: rgba(47, 157, 29, 1);
+}
+#finance-summary hr {
+  margin: 0.125rem auto;
+  border: none;
+  background-color: black;
+  height: 0.1px;
+  width: 85%;
+}
 section > header {
   text-decoration: underline;
   text-align: center;
 }
 section > div {
   display: flex;
+  margin: 0rem 1.25rem;
+  justify-content: space-between;
 }
 section div p,
 section header {

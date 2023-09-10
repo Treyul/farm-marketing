@@ -1,0 +1,73 @@
+#body {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+#Availableproducts {
+  background-color: rgba(216, 211, 121, 0.65);
+  border-radius: 10px;
+}
+section > header {
+  font-family: Charmonman, Cambria, Cochin, Georgia, Times, "Times New Roman",
+    serif;
+  text-align: center;
+  font-weight: bold;
+}
+section > article {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+section > article .headers {
+  font-weight: bold;
+}
+section > article div {
+  grid-column: span 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+section > article div p {
+  margin: 0px;
+}
+#PendingOrders {
+  background-color: rgba(170, 181, 43, 0.8);
+  border-radius: 10px;
+  margin-top: 1.25rem;
+}
+.order-deets {
+  background-color: rgba(183, 192, 75, 0.91);
+  grid-column: span 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-radius: 20px;
+}
+.order-deets > * {
+  display: grid;
+  grid-column: span 3;
+  justify-items: center;
+}
+.order-deets p {
+  margin: 0px;
+}
+.order-deets > header {
+  font-family: Charmonman, Cambria, Cochin, Georgia, Times, "Times New Roman",
+    serif;
+  font-weight: bold;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: -webkit-fill-available;
+  justify-items: center;
+}
+.order-deets > div {
+  grid-template-columns: 1fr 0.75fr 0.75fr 0.75fr;
+  border-top: 0.5px solid rgba(124, 148, 1, 1);
+  border-bottom: 0.5px solid rgba(124, 148, 1, 1);
+}
+/* .order-deets > div > header {
+  display: grid;
+  grid-column: span 4;
+  grid-template-columns: 1fr 0.75fr 0.75fr 0.75fr;
+} */
+.order-deets footer p {
+  font-family: Carattere, Cambria, Cochin, Georgia, Times, "Times New Roman",
+    serif;
+  grid-column: span 3;
+}
